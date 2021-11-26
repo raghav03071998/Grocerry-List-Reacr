@@ -51,6 +51,7 @@ table, th, td {
     min-width: 400px;
     text-align: center;
     vertical-align: middle;
+    margin-left:auto;margin-right:auto;
 }
 tr{
   border: solid;
@@ -114,10 +115,10 @@ th
   margin-left: 15px;
   border-radius: 10px;
 }
-table
+/* table
 {
-  margin-left:auto;margin-right:auto;
-}
+  
+} */
 #editButton
 {
   size: 10px;

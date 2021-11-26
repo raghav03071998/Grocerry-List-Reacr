@@ -7,9 +7,13 @@ function GroceryItems()
     const[id,setId] = useState(1);
     const [inputValue, setInputValue]= useState('');
     const handleAddButtonClick = () => {
-        var index = items.findIndex(x => x.itemName ===inputValue);
+        var index = items.findIndex(x => x.itemName ===inputValue.trim());
         var newItems = items;
-        if(index>-1)
+        if(inputValue=="")
+        {
+            newItems = [...items];
+        }
+        else if(index>-1)
         {
             items[index].quantity = items[index].quantity + 1;
             newItems = [...items];
